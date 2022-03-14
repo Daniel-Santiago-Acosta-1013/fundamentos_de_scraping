@@ -1,0 +1,4 @@
+Links = links= $x('//h2/a/@href').map(x=>x.value)
+Titulo = $x('//h2[@class=""]/span/text()').map(x=>x.wholeText)
+Resumen = $x('//div[@class = "lead"]/p/text()').map(x=>x.wholeText)
+Cuerpo = $x('//div[@class = "html-content"]/p[not (@class)]/text()').map(x=>x.wholeText)
